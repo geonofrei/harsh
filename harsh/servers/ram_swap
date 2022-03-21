@@ -1,0 +1,53 @@
+
+[1;31mPresione dos veces "Q" para salir.  [0m
+
+ ___    _   __  __          _____      ___   ___ 
+| _ \  /_\ |  \/  |  _  _  / __\ \    / /_\ | _ \
+|   / / _ \| |\/| | | || | \__ \\ \/\/ / _ \|  _/
+|_|_\/_/ \_\_|  |_|  \_, | |___/ \_/\_/_/ \_\_|  
+                     |__/                        
+
+               total        used        free      shared  buff/cache   available
+Mem:           3.8Gi       638Mi       1.1Gi        10Mi       2.0Gi       2.9Gi
+Low:           3.8Gi       2.7Gi       1.1Gi
+High:             0B          0B          0B
+Swap:          974Mi       1.0Mi       973Mi
+Total:         4.7Gi       640Mi       2.1Gi
+
+
+ ___                  _          _     
+| __|____ __  __ _ __(_)___   __| |___ 
+| _|(_-< '_ \/ _` / _| / _ \ / _` / -_)
+|___/__/ .__/\__,_\__|_\___/ \__,_\___|
+       |_|                             
+      _                                   _         _       
+ __ _| |_ __  __ _ __ ___ _ _  __ _ _ __ (_)___ _ _| |_ ___ 
+/ _` | | '  \/ _` / _/ -_) ' \/ _` | '  \| / -_) ' \  _/ _ \
+\__,_|_|_|_|_\__,_\__\___|_||_\__,_|_|_|_|_\___|_||_\__\___/
+                                                            
+
+Filesystem      Size  Used Avail Use% Mounted on
+udev            1.9G     0  1.9G   0% /dev
+tmpfs           389M 1012K  388M   1% /run
+/dev/sda1        78G  9.7G   64G  14% /
+tmpfs           1.9G     0  1.9G   0% /dev/shm
+tmpfs           5.0M     0  5.0M   0% /run/lock
+tmpfs           389M   64K  389M   1% /run/user/1000
+tmpfs           389M   52K  389M   1% /run/user/0
+tmpfs           389M   60K  389M   1% /run/user/130
+
+
+  ___ ___ _   _ 
+ / __| _ \ | | |
+| (__|  _/ |_| |
+ \___|_|  \___/ 
+                
+
+Linux 5.14.0-kali4-amd64 (kali) 	03/21/22 	_x86_64_	(2 CPU)
+
+11:44:32     CPU    %usr   %nice    %sys %iowait    %irq   %soft  %steal  %guest  %gnice   %idle
+11:44:32     all    1.50    0.00    2.71    1.12    0.00    0.38    0.00    0.00    0.00   94.28
+
+
+
+

@@ -1,0 +1,57 @@
+################################
+INSTALACIÓN Y PREPARACIÓN PREVIA
+################################
+
+Preparación previa del cliente.
+
+- La carpeta "harsh" debe estar situada en el directorio home del usuario ROOT. /root/harsh
+- Asignar permisos necesarios a la carpeta "harsh" para que pueda ejecutarse la aplicación. 
+- Se debe ejecutar el fichero "requisitos.sh" utilizando permisos root. 
+- Si todo ha ido bién, debemos poder ejecutar la aplicación iniciando el ejecutable "harsh.sh", siempre desde el directorio /root/harsh y con el comando "bash" (si se inicia con el comando "." como hago yo en el vídeo puede dar errores más adelante). 
+
+
+Preparación previa del servidor.
+
+- Debe estar instalado en el servidor el paquete openssh-server.
+- Editamos /etc/ssh/sshd_config.
+- Cambiamos la línea "PermitRootLogin prohibit-password" por "PermitRootLogin yes".
+- Guardamos cambios y reiniciamos el servicio "systemctl restart sshd". 
+
+
+
+
+########################
+UTILIZACIÓN
+########################
+
+Ejecutamos la aplicación con el usuario ROOT. Si no, podría dar fallos. 
+
+Lo primero que debemos hacer es configurar la herramienta para que se conecte al servidor remoto.
+Para ello entramos en la opción 8) Configuración de la herramienta. 
+
+- Configuramos la IP del servidor remoto. 
+- Configuramos el usuario y la contraseña ROOT del servidor remoto. DEBE SER ROOT. 
+- Generamos el certificado.
+- Le damos a "Test". Si al darle nos pide la contraseña, volvemos a generar el certificado. 
+
+Ya podremos utilizar cualquiera de las funciones que ofrece la herramienta (las que estén disponibles).
+
+!!!!!!!!!!!!!!
+
+La aplicación guarda la contraseña del usuario root del servidor remoto en texto plano, además, podría presentar
+otros fallos de seguridad desconocidos. No recomiendo su uso en entornos de producción y lo publico únicamente
+como prueba de concepto. 
+
+!!!!!!!!!!!!!!
+
+Errores frecuentes: 
+    
+    - Si falla al listar los procesos del servidor remoto hay tres posibles soluciones:
+
+        - Asegurarnos de que iniciamos "harsh.sh" con el comando "bash" y no con ".". 
+        - Cerrar Harsh y volver a iniciar. También podemos reiniciar el sistema. 
+        - Asegurarnos de que ejecutamos "harsh.sh" desde el directorio /root/harsh y no desde otro distinto. 
+
+    - Para cualquier otro fallo podemos aplicar las mismas soluciones que las mencionadas anteriormente, también debemos comprobar que haya acceso SSH al servidor y que no lo esté bloqueando el firewall del sistema o de la red. 
+
+George-Emilian Onofrei, 2022. 
